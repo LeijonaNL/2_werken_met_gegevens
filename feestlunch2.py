@@ -10,10 +10,19 @@ prijs_c = 0.39
 prijs_b = 2.78
 aftrek_k = 0.50
 
-# Test
+# Kortere variabelen om formules in de tekst te verminderen.
 total_c = aantal_c * prijs_c
 total_b = aantal_b * prijs_b
 korting = aantal_k * aftrek_k
 
+# Variabele maken voor de totale prijs
+prijs_total = total_c + total_b - korting
 
+# De totale prijs
 print(total_c + total_b - korting)
+
+# Tekst voor vervolg opdracht.
+print ("'De feestlunch kost je bij de bakker "
++ str(prijs_total) + " voor de " + str(aantal_c) + 
+" croissantjes en de " + str(aantal_b) + " stokbroden als de "
+ + str(aantal_k) + " kortingsbonnen nog geldig zijn!'")
